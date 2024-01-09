@@ -1,0 +1,166 @@
+[
+  {
+    "line": 12,
+    "elements": [
+      {
+        "line": 16,
+        "name": "Get a random user and print his email address to the console",
+        "description": "",
+        "id": "ayvens-tests;get-a-random-user-and-print-his-email-address-to-the-console",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 602944800,
+              "status": "passed"
+            },
+            "line": 17,
+            "name": "Entering  Random postId with given base URI",
+            "match": {
+              "location": "StepDefinition.getRandpmUsersEmail()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 3455894800,
+              "status": "passed"
+            },
+            "line": 18,
+            "name": "Pick email with given random postId",
+            "match": {
+              "location": "StepDefinition.pickEmail()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 711787300,
+              "status": "passed"
+            },
+            "line": 19,
+            "name": "Print email address in console",
+            "match": {
+              "location": "StepDefinition.printEmail()"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@randomUserEmail"
+          }
+        ]
+      },
+      {
+        "line": 23,
+        "name": "Create post and verify response",
+        "description": "",
+        "id": "ayvens-tests;create-post-and-verify-response",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 81100,
+              "status": "passed"
+            },
+            "line": 24,
+            "name": "Create post with given URI",
+            "match": {
+              "location": "StepDefinition.CreatePost()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 1519613300,
+              "status": "passed"
+            },
+            "line": 25,
+            "name": "Add a post with unique id and details",
+            "match": {
+              "location": "StepDefinition.addpost()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 171273300,
+              "status": "passed"
+            },
+            "line": 26,
+            "name": "verify newly created post with details",
+            "match": {
+              "location": "StepDefinition.verifyPost()"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@CreateandVerifypost"
+          }
+        ]
+      },
+      {
+        "line": 29,
+        "name": "The api returns 10 users, for each user confirm the titles of their first and last post are not empty",
+        "description": "",
+        "id": "ayvens-tests;the-api-returns-10-users--for-each-user-confirm-the-titles-of-their-first-and-last-post-are-not-empty",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 564409700,
+              "status": "passed"
+            },
+            "line": 30,
+            "name": "URI and resource details are provided",
+            "match": {
+              "location": "StepDefinition.getRequestwith10users()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 276788400,
+              "status": "passed"
+            },
+            "line": 31,
+            "name": "Pick 10 users",
+            "match": {
+              "location": "StepDefinition.pick10users()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 144055100,
+              "status": "passed"
+            },
+            "line": 32,
+            "name": "Verify titles of thier first and last posts are not empt",
+            "match": {
+              "location": "StepDefinition.verifyTitles()"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@Verify10UsersFirstandLastTitle"
+          }
+        ]
+      }
+    ],
+    "name": "Ayvens Tests",
+    "description": "",
+    "id": "ayvens-tests",
+    "keyword": "Feature",
+    "uri": "src/test/resources/Feaatures/ayvens.feature",
+    "tags": []
+  }
+]
